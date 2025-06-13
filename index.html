@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Pública</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📚 Biblioteca Pública</h1>
+
+  <!-- Botón para abrir el formulario -->
+  <div class="acciones">
+    <button onclick="mostrarFormulario()">➕ Agregar Libro</button>
+  </div>
+
+  <!-- Formulario para agregar un libro -->
+  <div id="formulario" class="formulario oculto">
+    <input type="text" id="titulo" placeholder="Título del libro" />
+    <input type="text" id="autor" placeholder="Autor" />
+    <input type="text" id="genero" placeholder="Género" />
+    <button onclick="agregarLibro()">📘 Guardar</button>
+    <button onclick="cancelarFormulario()">❌ Cancelar</button>
+  </div>
+
+  <!-- Contenedor de columnas tipo Trello -->
+  <div class="tablero">
+    <div class="columna">
+      <h2>📗 Disponible</h2>
+      <div id="disponible" class="zona-libros"></div>
+    </div>
+
+    <div class="columna">
+      <h2>📕 Prestado</h2>
+      <div id="prestado" class="zona-libros"></div>
+    </div>
+
+    <div class="columna">
+      <h2>📦 Inventario</h2>
+      <div id="inventario" class="zona-libros"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

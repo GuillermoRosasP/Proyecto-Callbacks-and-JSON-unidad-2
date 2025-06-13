@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  background-color: #006241;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #004f32;
+}
+
+.formulario {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+.formulario input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.tablero {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.columna {
+  background-color: #e6e6e6;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  min-height: 400px;
+}
+
+.columna h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.zona-libros {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tarjeta button {
+  background-color: #888;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.tarjeta button:hover {
+  background-color: #555;
+}
